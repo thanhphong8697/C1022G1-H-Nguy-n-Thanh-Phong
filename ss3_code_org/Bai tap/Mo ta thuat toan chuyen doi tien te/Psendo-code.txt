@@ -1,0 +1,5 @@
+Begin
+	Input	Số tiền Đô
+	VNĐ = Số tiền Đô * 23000
+	Output VNĐ
+End

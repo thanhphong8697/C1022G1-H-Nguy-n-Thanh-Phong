@@ -1,0 +1,7 @@
+Begin
+	Input	Điểm Toán
+		Điểm Lý
+		Điểm Hoá
+	Điểm trung bình = (Điểm Toán + Điểm Lý + Điểm Hoá) / 3
+	Output	Điểm trung bình
+End

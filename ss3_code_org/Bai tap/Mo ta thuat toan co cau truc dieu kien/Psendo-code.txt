@@ -1,0 +1,20 @@
+Begin
+	Input X
+	If X => 75
+	Output "Loại A"
+	Else 
+		If 60 <= X < 75
+		Output "Loại B"
+		Else
+			If 45 <= X < 60
+			Output "Loại C"
+			Else
+				If 35 <= X < 45
+				Output "Loại D"
+				Else 
+				Output "Loại E"
+				End If
+			End If
+		End If
+	End If
+End
