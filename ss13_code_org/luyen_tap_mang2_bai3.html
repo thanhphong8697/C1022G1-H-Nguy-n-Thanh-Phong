@@ -10,10 +10,13 @@
     let count = 0
     let a = str.split('')
     for (let i = 0; i < a.length; i++){
-        if (!isNaN(a[i])){
+        // if (!isNaN(a[i])){
+        //     count++
+        // }
+        if (a[i] / a[i] === 1){
             count++
         }
-    } document.writeln(count)
+    } document.writeln('Số ký tự số trong mảng là: ' + count)
 </script>
 </body>
 </html>
