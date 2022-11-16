@@ -7,13 +7,8 @@
 <body>
 <script>
     let str = prompt('Nhập một chuỗi ký tự')
-    let count = 0
-    let a = str.split('')
-    for (let i = 0; i < a.length; i++){
-        if (isNaN(a[i])){
-            count++
-        }
-    } document.writeln('Số từ trong một chuỗi là: ' + count)
+    let a = str.split(' ')
+  document.writeln('Số từ trong một chuỗi là: ' + a.length)
 </script>
 </body>
 </html>

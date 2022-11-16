@@ -9,23 +9,18 @@
     <input id="1" type="text">
     <br>
     <br>
-<button type="button" onclick="dich">Dịch</button>
-<p id="2"></p>
+<button type="button" onclick="dich()">Dịch</button>
+
 <script>
-    let eng = ['sky', 'apple', 'banana', 'smartphone', 'television']
-    let vn = ['bầu trời', 'quả táo', 'quả chuối', 'điện thoại di động', 'tivi']
-    let sea = document.getElementById('1').value;
-    let count;
-    for (let i = 0; i < eng.length; i++){
-        if (sea == eng[i]){
-            count = i;
-            for (let k = 0; k < vn.length; k++){
-                if (count = k ){
-                    sea = vn[k]
-                }
-            }
-        }
+    function dich() {
+        let eng = ['red', 'yellow', 'green', 'black', 'white']
+        let vn = ['màu đỏ', 'màu vàng', 'màu xanh lá', 'màu đen', 'màu trắng']
+        let sea = document.getElementById('1').value;
+        let a = eng.indexOf(sea)
+        alert(document.getElementById('1').value + ' nghĩa là ' + vn[a])
+
     }
+
 
 </script>
 </body>
