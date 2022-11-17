@@ -6,17 +6,21 @@
 </head>
 <body>
 <script>
-    let a = +prompt('độ dài của mảng số nguyên V');
-    let numb = [];
-    let v = +prompt('nhập phần tử V')
-    for (let i = 0; i < a; i++) {
-        numb[i] = +prompt('Nhập số');
-        if (numb[i]==v) {
-            numb.splice(i,1)
-            numb.push(0)
+    let a = Array(5)
+    for (let i = 0; i < a.length; i++) {
+        a[i] = +prompt('Nhập phần tử vào mảng')
+    }
+    let v = +prompt('Nhập số V')
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === v) {
+            for (let j = i; j < a.length - 1; j++) {
+                a[j] = a[j + 1]
+            }
+            a[a.length - 1] = 0;
         }
     }
-    document.write(numb)
+    document.writeln(a)
+
 </script>
 </body>
 </html>
