@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('Nhập xâu ký tự');
+    let mangStr = str.split(' ');
+    let mangCon;
+    for (let i = 0; i < mangStr.length; i++) {
+        if (mangStr[i] === '' && mangStr[i + 1] === '') {
+            mangStr.splice(i,1);
+            i--;
+        }
+    }
+    document.writeln(mangStr.join(' '));
+    let result = ''
+    for (let i = 0; i < mangStr.length; i++){
+    result +=  mangStr[i][0].toUpperCase()+ mangStr[i].slice(1).toLowerCase()+ ' '
+    }
+    document.writeln(result)
+    for (let i = 0; i < mangStr.length; i++) {
+        mangCon = mangStr[i].split('');
+        mangCon[0] = mangCon[0].toUpperCase();
+        for (j = 1; j < mangCon.length; j++) {
+            mangCon[j] = mangCon[j].toLowerCase();
+        }
+        document.writeln(mangCon.join(''));
+    }
+    document.writeln('<br>');
+ function doDai() {
+     let max = mangStr.length;
+     for (let i = 0; i < mangStr.length; i++) {
+         if (mangStr[i].length > max) {
+             max = mangStr[i].length;
+             document.writeln(mangStr[i]);
+         }
+     }
+
+ }
+</script>
+</body>
+</html>
