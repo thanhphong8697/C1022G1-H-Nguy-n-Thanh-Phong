@@ -11,22 +11,23 @@
             this.longs = longs;
             this.width = width;
         }
+
         perimeter() {
             document.writeln('Chu vi hình chữ nhật là: ' + (this.longs + this.width) * 2);
         }
+
         area() {
             document.writeln('Diện tích hình chũ nhật là: ' + this.longs * this.width);
         }
-        display() {
 
-        }
     }
-    let recObj = new Rectangle(6,3);
+
+    let recObj = new Rectangle(6, 3);
     recObj.width = 4;
     recObj.longs = 7;
-  recObj.area();
-  document.writeln('<br>')
-  recObj.perimeter();
+    recObj.area();
+    document.writeln('<br>');
+    recObj.perimeter();
 </script>
 </body>
 </html>
